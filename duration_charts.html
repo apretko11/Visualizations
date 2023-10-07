@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.14.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "hconcat": [{"data": {"name": "data-c2db72001514507a4be2984ca087ca32"}, "mark": {"type": "line"}, "encoding": {"x": {"axis": {"labels": true}, "field": "Year", "title": "Year", "type": "ordinal"}, "y": {"axis": {"labels": true}, "field": "AverageDurationByYear", "title": "Average Duration in Seconds", "type": "quantitative"}}, "title": "Average Duration of Incidents by Year (in Seconds): 1965 to 2014"}, {"data": {"name": "data-55ba71d8fda11d7c7e6ebfafe4a31f5f"}, "mark": {"type": "line"}, "encoding": {"x": {"axis": {"labels": true}, "field": "Year", "title": "Year", "type": "ordinal"}, "y": {"axis": {"labels": true}, "field": "MedianDurationByYear", "title": "Median Duration in Seconds", "type": "quantitative"}}, "title": "Median Duration of Incidents by Year (in Seconds): 1965 to 2014"}], "$schema": "https://vega.github.io/schema/vega-lite/v5.14.1.json", "datasets": {"data-c2db72001514507a4be2984ca087ca32": [{"Year": 1965, "AverageDurationByYear": 4517.423913043478}, {"Year": 1966, "AverageDurationByYear": 22984.2}, {"Year": 1967, "AverageDurationByYear": 15389.646739130434}, {"Year": 1968, "AverageDurationByYear": 8768.214953271028}, {"Year": 1969, "AverageDurationByYear": 165488.71296774194}, {"Year": 1970, "AverageDurationByYear": 1673.4444444444443}, {"Year": 1971, "AverageDurationByYear": 799.140625}, {"Year": 1972, "AverageDurationByYear": 2855.309677419355}, {"Year": 1973, "AverageDurationByYear": 2055.4324324324325}, {"Year": 1974, "AverageDurationByYear": 1119.7724253731344}, {"Year": 1975, "AverageDurationByYear": 1315.9163987138263}, {"Year": 1976, "AverageDurationByYear": 3250.3076923076924}, {"Year": 1977, "AverageDurationByYear": 37155.22727272727}, {"Year": 1978, "AverageDurationByYear": 1974.8939393939395}, {"Year": 1979, "AverageDurationByYear": 2558.1434426229507}, {"Year": 1980, "AverageDurationByYear": 1066.9768907563025}, {"Year": 1981, "AverageDurationByYear": 1792.1349693251534}, {"Year": 1982, "AverageDurationByYear": 2479.777777777778}, {"Year": 1983, "AverageDurationByYear": 662037.0810810811}, {"Year": 1984, "AverageDurationByYear": 45226.88108108108}, {"Year": 1985, "AverageDurationByYear": 1089.2744186046511}, {"Year": 1986, "AverageDurationByYear": 1149.4787234042553}, {"Year": 1987, "AverageDurationByYear": 12998.130089686098}, {"Year": 1988, "AverageDurationByYear": 23638.299163179916}, {"Year": 1989, "AverageDurationByYear": 2242.909465020576}, {"Year": 1990, "AverageDurationByYear": 1060.431906614786}, {"Year": 1991, "AverageDurationByYear": 286610.4636752137}, {"Year": 1992, "AverageDurationByYear": 1158.5569105691056}, {"Year": 1993, "AverageDurationByYear": 23468.667333333335}, {"Year": 1994, "AverageDurationByYear": 26525.81366906475}, {"Year": 1995, "AverageDurationByYear": 3579.0396810506563}, {"Year": 1996, "AverageDurationByYear": 4291.556900726392}, {"Year": 1997, "AverageDurationByYear": 2778.5412077294686}, {"Year": 1998, "AverageDurationByYear": 4205.196952271421}, {"Year": 1999, "AverageDurationByYear": 997.955975609756}, {"Year": 2000, "AverageDurationByYear": 1068.792213740458}, {"Year": 2001, "AverageDurationByYear": 2197.1455194596333}, {"Year": 2002, "AverageDurationByYear": 20482.219454998445}, {"Year": 2003, "AverageDurationByYear": 1262.8523888182974}, {"Year": 2004, "AverageDurationByYear": 5226.252639810426}, {"Year": 2005, "AverageDurationByYear": 1215.4464982664686}, {"Year": 2006, "AverageDurationByYear": 3078.3357104047814}, {"Year": 2007, "AverageDurationByYear": 2583.275630450153}, {"Year": 2008, "AverageDurationByYear": 4267.893427046263}, {"Year": 2009, "AverageDurationByYear": 2884.014063886424}, {"Year": 2010, "AverageDurationByYear": 21626.92982620949}, {"Year": 2011, "AverageDurationByYear": 2335.9321745125076}, {"Year": 2012, "AverageDurationByYear": 9326.629839901478}, {"Year": 2013, "AverageDurationByYear": 4348.316611842105}, {"Year": 2014, "AverageDurationByYear": 851.1045870337477}], "data-55ba71d8fda11d7c7e6ebfafe4a31f5f": [{"Year": 1965, "MedianDurationByYear": 270.0}, {"Year": 1966, "MedianDurationByYear": 300.0}, {"Year": 1967, "MedianDurationByYear": 300.0}, {"Year": 1968, "MedianDurationByYear": 390.0}, {"Year": 1969, "MedianDurationByYear": 300.0}, {"Year": 1970, "MedianDurationByYear": 300.0}, {"Year": 1971, "MedianDurationByYear": 300.0}, {"Year": 1972, "MedianDurationByYear": 300.0}, {"Year": 1973, "MedianDurationByYear": 300.0}, {"Year": 1974, "MedianDurationByYear": 300.0}, {"Year": 1975, "MedianDurationByYear": 300.0}, {"Year": 1976, "MedianDurationByYear": 300.0}, {"Year": 1977, "MedianDurationByYear": 300.0}, {"Year": 1978, "MedianDurationByYear": 300.0}, {"Year": 1979, "MedianDurationByYear": 300.0}, {"Year": 1980, "MedianDurationByYear": 300.0}, {"Year": 1981, "MedianDurationByYear": 300.0}, {"Year": 1982, "MedianDurationByYear": 300.0}, {"Year": 1983, "MedianDurationByYear": 300.0}, {"Year": 1984, "MedianDurationByYear": 420.0}, {"Year": 1985, "MedianDurationByYear": 300.0}, {"Year": 1986, "MedianDurationByYear": 180.0}, {"Year": 1987, "MedianDurationByYear": 600.0}, {"Year": 1988, "MedianDurationByYear": 300.0}, {"Year": 1989, "MedianDurationByYear": 300.0}, {"Year": 1990, "MedianDurationByYear": 300.0}, {"Year": 1991, "MedianDurationByYear": 300.0}, {"Year": 1992, "MedianDurationByYear": 300.0}, {"Year": 1993, "MedianDurationByYear": 300.0}, {"Year": 1994, "MedianDurationByYear": 240.0}, {"Year": 1995, "MedianDurationByYear": 180.0}, {"Year": 1996, "MedianDurationByYear": 180.0}, {"Year": 1997, "MedianDurationByYear": 180.0}, {"Year": 1998, "MedianDurationByYear": 120.0}, {"Year": 1999, "MedianDurationByYear": 120.0}, {"Year": 2000, "MedianDurationByYear": 120.0}, {"Year": 2001, "MedianDurationByYear": 180.0}, {"Year": 2002, "MedianDurationByYear": 120.0}, {"Year": 2003, "MedianDurationByYear": 180.0}, {"Year": 2004, "MedianDurationByYear": 180.0}, {"Year": 2005, "MedianDurationByYear": 180.0}, {"Year": 2006, "MedianDurationByYear": 120.0}, {"Year": 2007, "MedianDurationByYear": 180.0}, {"Year": 2008, "MedianDurationByYear": 120.0}, {"Year": 2009, "MedianDurationByYear": 180.0}, {"Year": 2010, "MedianDurationByYear": 180.0}, {"Year": 2011, "MedianDurationByYear": 180.0}, {"Year": 2012, "MedianDurationByYear": 180.0}, {"Year": 2013, "MedianDurationByYear": 180.0}, {"Year": 2014, "MedianDurationByYear": 180.0}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
